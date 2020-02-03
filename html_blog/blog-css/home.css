@@ -1,0 +1,47 @@
+@import url("common.css");
+@import url("normalize.css");
+
+.card-pic{
+    height: 26vh;    
+}
+.top-posts{
+    background-color: blanchedalmond;
+}
+
+@media only screen and (min-width: 600px) {
+    article.card{
+        max-width: 85%;
+    }   
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-template-rows: auto auto auto;
+    }
+    .side{
+        grid-column: 2;
+        grid-row: 1; 
+        border: 2px solid blanchedalmond;      
+    }
+    .subs{
+        grid-column: 2;
+        grid-row: 2/span 1;
+        margin-bottom: 0;
+    }
+    .top-posts{
+        grid-column: 2;
+        grid-row: 3/span 1;
+    }
+    .main{
+        grid-column: 1;
+        grid-row: 1/span 3;
+    }
+}
+@media only screen and (min-width: 1024px){
+    
+}
+@media only screen and (min-width: 1440px){    
+    .blog-cards {
+        justify-content: space-around;
+    }        
+}
+

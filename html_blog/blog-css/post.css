@@ -1,0 +1,59 @@
+@import url("common.css");
+@import "normalize.css";
+
+#blog-title{
+    font-family: amatic sc;
+    font-weight: 700;
+    font-size: 5vh;
+}
+.profile {
+    background: none;
+    border: 2px solid blanchedalmond;
+}
+.subs{
+    background-color: blanchedalmond;
+}
+.old-posts{
+    background-color: blanchedalmond;
+}
+
+@media only screen and (min-width: 768px){
+    .passport{
+        height: 25%;
+        width: 25%;
+        padding-right: 1vw;
+    }
+    .profile{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .profile{
+        flex-direction: column;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-template-rows: auto auto auto auto;        
+    }
+    .blog-header{
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+    .content{
+        grid-column: 1/span 1;
+        grid-row: 2/span 3;
+    }
+    .profile{
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+    }    
+    .subs{
+        grid-column: 2/span 1;
+        grid-row: 3/span 1;        
+    }
+    .old-posts{
+        grid-column: 2/span 1;
+        grid-row: 4/span 1;       
+    }
+}

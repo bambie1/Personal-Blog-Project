@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Pacifico|Roboto:300|Lato:400,700i|Indie+Flower|Shadows+Into+Light&display=swap');
+
+.navbar, footer{
+	background-color: blanchedalmond;
+}
+h2.card-hd {
+    font-family: amatic sc;
+    font-weight: 700;
+}
+.card-title {
+    font-size: 1.3rem;
+	font-family: amatic sc;
+	font-weight: 700;
+}
+h4{
+	font-family: amatic sc;	
+}
+h5.sub-label, .old-posts-header {
+	font-family: Lato;
+	font-weight: 700;
+	font-style: italic;
+}
+a.nav-link{
+	text-transform: uppercase;
+}
+.navbar-brand{
+	font-family: Pacifico;
+}
+i.fa {
+    color: black;
+}
+.subs{
+	background-color: blanchedalmond;
+}

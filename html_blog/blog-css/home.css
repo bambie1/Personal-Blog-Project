@@ -1,14 +1,39 @@
 @import url("common.css");
 @import url("normalize.css");
 
-.card-pic{
-    height: 26vh;    
+.container{
+    padding-top: 0.5vh;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.top-posts{
-    background-color: blanchedalmond;
+.card-pic{
+    height: 26vh; 
+    border-radius: 9px;   
+}
+.card-img {
+    width: 100%;
+}
+.blog-cards{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+article.card{
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #bcbcc4;
+    border-radius: 12px;
+}
+.side {
+    align-self: center;
+    padding: 1vw;
+    text-align: center;
+}
+.subs{
+    width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     article.card{
         max-width: 85%;
     }   
@@ -19,13 +44,18 @@
     }
     .side{
         grid-column: 2;
-        grid-row: 1; 
-        border: 2px solid blanchedalmond;      
+        grid-row: 1;         
+        border-radius: 30px;
+        /* font-size: 1.6vw; */
+        /* border: 2px solid blanchedalmond;       */
     }
     .subs{
         grid-column: 2;
         grid-row: 2/span 1;
         margin-bottom: 0;
+    }
+    #sub-name{
+        display: flex;
     }
     .top-posts{
         grid-column: 2;
@@ -36,9 +66,7 @@
         grid-row: 1/span 3;
     }
 }
-@media only screen and (min-width: 1024px){
-    
-}
+
 @media only screen and (min-width: 1440px){    
     .blog-cards {
         justify-content: space-around;
